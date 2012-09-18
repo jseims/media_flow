@@ -54,6 +54,8 @@ $('#media_flow').media_flow('start');
 What then happens is this plugin will call
 
 * The 'getData' callback whenever it needs your application to provide the state required to render an element.  Your callback will return an opaque object that is passed to the 'render' callback.
-* The 'render' callback receives an object previous returned by 'getData', and it returns html that will get inserted into the DOM.
+* The 'render' callback receives an object previously returned by 'getData', and it returns html that will get inserted into the DOM.
+
+OPTION DOCUMENTATION
 
 
