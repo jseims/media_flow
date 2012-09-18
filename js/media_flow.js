@@ -16,11 +16,6 @@
             return this.each(function() {
                 var $this = $(this);
                 var opts = $.extend({}, $.fn.media_flow.defaults, options);
-
-                if (opts.layout === "grid") {
-                    opts.compressLayout = false;
-                }
-                
                 var state = new flowState(opts);
                 
                 $this.data("flow_state", state);
@@ -159,7 +154,6 @@
         onClick : function() { console.log("onClick undefined"); },
         idle : function() { },
         decorateCell : null,
-        layout : "grid",
         compressLayout : false,
         useTranslate3d : false,
     }
@@ -249,8 +243,7 @@
             
             this.curFrame++;
             if (this.curFrame > this.opts.idleFrames) {
-                this.paused = true;
-                this.pauseCells();
+                this.idle();
             }
         };
         
