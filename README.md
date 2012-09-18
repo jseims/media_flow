@@ -56,7 +56,7 @@ What then happens is this plugin will call
 * The 'getData' callback whenever it needs your application to provide the state required to render an element.  Your callback will return an opaque object that is passed to the 'render' callback.
 * The 'render' callback receives an object previously returned by 'getData', and it returns html that will get inserted into the DOM.
 
-OPTION DOCUMENTATION
+OPTIONS
 
 * padding, amount of padding between rendered elements.  Default 0.
 * clipWidth and clipHeight, the width and height of the box that clips the rendered elements.  Default 0.
@@ -75,7 +75,7 @@ OPTION DOCUMENTATION
 * compressLayout, if true, media_flow will try to pack elements as tightly as possible (rather than use the 'width' parameter).  Default false.
 * useTranslate3d, if true, media_flow will try to use hardware accelated transformations (especially useful for mobile/iPad).  Default false.
 
-MEDIA_FLOW METHODS
+METHODS
 
 * 'start', starts the animation.
 * 'setSpeed', changes 'speed' option after initialization.
